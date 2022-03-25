@@ -49,7 +49,7 @@
 .header__navbar-user-name {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 .header__navbar-user-menu {
@@ -88,6 +88,10 @@
     z-index: -1;
 }
 
+.header__navbar-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .header__navbar-user-item a {
     text-decoration: none;
     color: var(--text-color);
@@ -121,7 +125,7 @@
 
 .header__navbar-item,.header__navbar-item-link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -154,6 +158,10 @@
 .header__navbar-icon {
     font-size: 1.4  rem;
     margin: 0 4px;
+}
+
+.header__navbar-icon-zalo:hover {
+    opacity: 0.6;
 }
 
 .header__navbar-tittle--no-pointer {
@@ -219,14 +227,15 @@
     width: 400px;
     background-color: var(--white-color);
     border: 1px solid #d3d3d3;
-    transform-origin: calc(100% - 20px) top;
+    border-radius: 2px;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.25s;
     -webkit-animation: headerNotifyGrowth ease-in 0.25s;
     -moz-animation: headerNotifyGrowth ease-in 0.25s;
     -ms-animation: headerNotifyGrowth ease-in 0.25s;
     -o-animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity, transform;
-    z-index: 999;
+    z-index: 1;
     
 }
 
@@ -491,6 +500,11 @@
 
 .header__logo {
     width: 200px;
+}
+
+.header__logo-link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .header__logo-img {
@@ -789,14 +803,18 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100% - 6px);
     width: 124px;
     list-style: none;
     box-shadow: 0 1px 2px #dfdfdf;
     padding-left: 0;
     border-radius: 2px;
     display: none;
-    animation: fadeIn ease-in 0.4s;
+    animation: fadeIn ease-in 0.3s;
+    -webkit-animation: fadeIn ease-in 0.3s;
+    -moz-animation: fadeIn ease-in 0.3s;
+    -ms-animation: fadeIn ease-in 0.3s;
+    -o-animation: fadeIn ease-in 0.3s;
 }
 
 .header__search-option-item {
