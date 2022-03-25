@@ -5,6 +5,9 @@
     --black-color: #000;
     --text-color: #333;
     --boder-color: #dbdbdb;
+    --header-height: 129px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -78,11 +81,16 @@ html {
     margin: auto;
     position: relative;
     animation: growth linear 0.2s; 
+    -webkit-animation: growth linear 0.2s;
+    -moz-animation: growth linear 0.2s;
+    -ms-animation: growth linear 0.2s;
+    -o-animation: growth linear 0.2s;
+    will-change: transform;
 }
  /* Button style */
 
  .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     border: none;
     border-radius: 2px;
